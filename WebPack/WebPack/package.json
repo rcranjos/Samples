@@ -1,0 +1,21 @@
+{
+  "name": "webpack-sample",
+  "description": "finance authorization system",
+  "version": "1.0.0",
+  "author": "IT-Finance",
+  "private": true,
+  "scripts": {},
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.2.1",
+    "vue": "^2.3.3"
+  },
+  "devDependencies": {
+    "vue-devtools": "^3.1.9"
+  },
+  "-vs-binding": {
+    "BeforeBuild": [
+      "update"
+    ]
+  }
+}
