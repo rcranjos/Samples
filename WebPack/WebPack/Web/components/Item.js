@@ -1,4 +1,4 @@
-﻿Vue.component('item', {
+﻿export default {
     template: '#item',
     data: function () {
         return {
@@ -36,4 +36,4 @@
             this.$emit('remove', this.item);
         }
     }
-});
+};

@@ -1,4 +1,9 @@
-﻿Vue.component('organization', {
+﻿import Collection from './Collection'
+
+export default {
+    components: {
+        'collection': Collection
+    },
     template: '#organization',
     data: function () {
         return {
@@ -24,4 +29,4 @@
             }
         }
     }
-});
+};

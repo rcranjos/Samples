@@ -1,4 +1,11 @@
-﻿Vue.component('collection', {
+﻿import Item from './Item';
+import AddItem from './AddItem'
+
+export default {
+    components: {
+        'item': Item,
+        'add-item': AddItem
+    },
     template: '#collection',
     props: ['collection', 'title', 'placeholder', 'readOnly', 'checkable', 'selectedItem'],
     methods: {
@@ -14,4 +21,4 @@
             this.$emit('remove', item);
         }      
     }
-});
+};

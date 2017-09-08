@@ -4,18 +4,24 @@
   "version": "1.0.0",
   "author": "IT-Finance",
   "private": true,
-  "scripts": {},
+  "scripts": {
+    "development": "cross-env NODE_ENV=development webpack --progress",
+    "release": "cross-env NODE_ENV=production webpack --progress --hide-modules"
+  },
   "dependencies": {
     "bootstrap": "^3.3.7",
+    "cross-env": "^3.0.0",
+    "ecmarkup": "^3.12.0",
+    "expose-loader": "^0.7.3",
+    "file-loader": "^0.9.0",
     "jquery": "^3.2.1",
-    "vue": "^2.3.3"
-  },
-  "devDependencies": {
-    "vue-devtools": "^3.1.9"
+    "vue": "^2.3.3",
+    "webpack": "^2.6.1"
   },
   "-vs-binding": {
     "BeforeBuild": [
-      "update"
+      "update",
+      "development"
     ]
   }
 }

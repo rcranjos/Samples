@@ -1,4 +1,5 @@
-﻿Vue.component('add-item', {
+﻿
+export default {
     template: '#add-item',
     data: function () {
         return {
@@ -15,4 +16,4 @@
             this.newItem = "";
         }
     }
-});
+};
