@@ -76,6 +76,11 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="main.js" />
+    <Content Include="Web\components\AddItem.js" />
+    <Content Include="Web\components\Collection.js" />
+    <Content Include="Web\components\Item.js" />
+    <Content Include="Web\components\Organization.js" />
     <None Include="packages.config" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -104,7 +109,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Server\" />
-    <Folder Include="Web\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
