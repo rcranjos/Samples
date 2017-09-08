@@ -9,8 +9,49 @@ module.exports = {
     filename: 'build.js'
     },
     plugins: [
+        new webpack.ProvidePlugin({
+            $: "jquery",
+            jQuery: "jquery",
+            jquery: 'jquery'
+        }),
+        new webpack.LoaderOptionsPlugin({
+            debug: true
+        })
     ],
-    module: { 
+    module: {
+        rules: [
+            {
+                test: require.resolve('jquery'),
+                use: [
+                    {
+                        loader: 'expose-loader',
+                        options: 'jQuery'
+                    },
+                    {
+                        loader: 'expose-loader',
+                        options: '$'
+                    }
+                ]
+            },
+            {
+                test: /\.(png|jpg|gif|svg)$/,
+                loader: 'file-loader',
+                options: {
+                    name: '[name].[ext]?[hash]'
+                }
+            },
+            {
+                test: /\.css$/,
+                use: [
+                    { loader: "style-loader" },
+                    { loader: "css-loader" }
+                ]
+            },
+            {
+                test: /\.(eot|svg|ttf|woff|woff2)$/,
+                loader: 'file-loader?name=public/fonts/[name].[ext]'
+            },
+        ]    
     },
     resolve: {
         alias: {
