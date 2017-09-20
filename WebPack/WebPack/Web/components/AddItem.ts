@@ -1,6 +1,14 @@
-﻿import template from './AddItem.html'
+﻿import Vue from 'vue';
 
-export default {
+import template from './AddItem.html';
+
+interface AddItem extends Vue {
+    readonly placeholder: string;
+
+    newItem: string;
+}
+
+const component: Vue.ComponentOptions<AddItem> = {
     template: template,
     data: function () {
         return {
@@ -9,7 +17,7 @@ export default {
     },
     props: ['placeholder'],
     methods: {
-        Add: function(){
+        Add: function () {
             if (this.newItem == null || this.newItem.length == 0) {
                 return;
             }
@@ -18,3 +26,5 @@ export default {
         }
     }
 };
+
+export default component;

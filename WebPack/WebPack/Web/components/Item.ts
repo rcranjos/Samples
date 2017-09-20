@@ -1,6 +1,24 @@
-﻿import template from './Item.html'
+﻿import Vue from 'vue';
 
-export default {
+import template from './Item.html'
+
+interface Item extends Vue {
+    readonly item: string;
+    readonly readOnly: boolean;
+    readonly checkable: boolean;
+    readonly selectedItem: string
+
+    readonly selected: boolean;
+
+    removeActive: boolean;
+
+    Select(): void;
+    ActiveRemove(): void;
+    DisableRemove(): void;
+    Remove(): void;
+}
+
+const component: Vue.ComponentOptions<Item> = {
     template: template,
     data: function () {
         return {
@@ -39,3 +57,5 @@ export default {
         }
     }
 };
+
+export default component;

@@ -70,7 +70,7 @@
     <Content Include="webpack.config.js" />
     <TypeScriptCompile Include="main.ts" />
     <Content Include="Web\components\AddItem.html" />
-    <TypeScriptCompile Include="scf.d.ts" />
+    <TypeScriptCompile Include="modules.d.ts" />
     <TypeScriptCompile Include="Web\components\AddItem.ts" />
     <Content Include="Web\components\Collection.html" />
     <TypeScriptCompile Include="Web\components\Collection.ts" />

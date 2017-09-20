@@ -1,8 +1,20 @@
-﻿import template from './Organization.html'
+﻿import Vue from 'vue';
+
+import template from './Organization.html'
 
 import Collection from './Collection'
 
-export default {
+interface Organization extends Vue {
+    readOnly: boolean;
+    collection: string[];
+    selectedItem: string;
+
+    SelectItem(item: string): void;
+    Add(item: string): void;
+    Remove(item: string): void;
+}
+
+const component: Vue.ComponentOptions<Organization> = {
     components: {
         'collection': Collection
     },
@@ -32,3 +44,5 @@ export default {
         }
     }
 };
+
+export default component;
