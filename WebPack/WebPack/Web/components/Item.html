@@ -1,0 +1,13 @@
+﻿<li class="list-group-item text-center"
+    v-bind:class='[{"btn": checkable},{"list-group-item-info": selected}]'
+    v-on:click="Select"
+    v-on:mouseover="ActiveRemove"
+    v-on:mouseout="DisableRemove">
+    <button v-if="!readOnly"
+            class="btn glyphicon glyphicon-remove btn-xs pull-left invisible disabled" />
+    {{item}}
+    <button v-if="!readOnly"
+            class="btn glyphicon glyphicon-remove btn-danger btn-xs pull-right"
+            v-bind:class="{'invisible disabled': !removeActive}"
+            v-on:click.stop="Remove" />
+</li>

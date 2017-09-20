@@ -1,4 +1,9 @@
-﻿import Item from './Item';
+﻿import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap';
+
+import template from './Collection.html'
+
+import Item from './Item';
 import AddItem from './AddItem'
 
 export default {
@@ -6,7 +11,7 @@ export default {
         'item': Item,
         'add-item': AddItem
     },
-    template: '#collection',
+    template: template,
     props: ['collection', 'title', 'placeholder', 'readOnly', 'checkable', 'selectedItem'],
     methods: {
         SelectItem: function(item) {

@@ -1,5 +1,10 @@
-﻿export default {
-    template: '#item',
+﻿import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap';
+
+import template from './Item.html'
+
+export default {
+    template: template,
     data: function () {
         return {
             removeActive: false

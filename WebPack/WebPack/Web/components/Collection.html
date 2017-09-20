@@ -1,0 +1,15 @@
+﻿<ol class="list-group">
+    <li class="list-group-item list-group-item-heading active text-center">
+        {{ title }}
+    </li>
+    <add-item v-if="!readOnly"
+              v-bind:placeholder="placeholder"
+              v-on:add="Add" />
+    <item v-bind:selectedItem="selectedItem"
+          v-bind:checkable="checkable"
+          v-on:remove="Remove"
+          v-for="item in collection"
+          v-bind:item="item"
+          v-on:item-selected="SelectItem"
+          v-bind:readOnly="readOnly" />
+</ol>

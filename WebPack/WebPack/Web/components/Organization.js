@@ -1,10 +1,15 @@
-﻿import Collection from './Collection'
+﻿import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap';
+
+import template from './Organization.html'
+
+import Collection from './Collection'
 
 export default {
     components: {
         'collection': Collection
     },
-    template: '#organization',
+    template: template,
     data: function () {
         return {
             readOnly: false,

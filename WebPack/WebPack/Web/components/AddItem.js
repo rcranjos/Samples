@@ -1,6 +1,10 @@
-﻿
+﻿import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap';
+
+import template from './AddItem.html'
+
 export default {
-    template: '#add-item',
+    template: template,
     data: function () {
         return {
             newItem: ""

@@ -1,0 +1,15 @@
+﻿<div class="container">
+    <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+            <collection title="Users"
+                        v-bind:readOnly="readOnly"
+                        v-bind:collection="collection"
+                        v-bind:selectedItem="selectedItem"
+                        v-on:item-selected="SelectItem"
+                        v-on:add="Add"
+                        v-on:remove="Remove"
+                        checkable="true"
+                        placeholder="new User" />
+        </div>
+    </div>
+</div>

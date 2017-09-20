@@ -69,12 +69,16 @@
     <Content Include=".gitignore" />
     <Content Include="webpack.config.js" />
     <Content Include="main.js" />
+    <Content Include="Web\components\AddItem.html" />
     <Content Include="Web\components\AddItem.js" />
+    <Content Include="Web\components\Collection.html" />
     <Content Include="Web\components\Collection.js" />
     <Content Include="Web\components\Item.js" />
+    <Content Include="Web\components\Organization.html" />
     <Content Include="Web\components\Organization.js" />
     <Content Include="package.json" />
     <Content Include="package-lock.json" />
+    <Content Include="Web\components\Item.html" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -99,7 +103,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="dist\" />
     <Folder Include="Server\" />
   </ItemGroup>
   <ItemGroup>
