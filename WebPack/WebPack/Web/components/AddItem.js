@@ -1,7 +1,4 @@
-﻿import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap';
-
-import template from './AddItem.html'
+﻿import template from './AddItem.html'
 
 export default {
     template: template,

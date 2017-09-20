@@ -1,7 +1,4 @@
-﻿import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap';
-
-import template from './Collection.html'
+﻿import template from './Collection.html'
 
 import Item from './Item';
 import AddItem from './AddItem'

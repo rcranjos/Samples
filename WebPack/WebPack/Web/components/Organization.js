@@ -1,7 +1,4 @@
-﻿import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap';
-
-import template from './Organization.html'
+﻿import template from './Organization.html'
 
 import Collection from './Collection'
 
