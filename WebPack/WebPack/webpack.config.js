@@ -54,13 +54,7 @@ module.exports = {
             },
             {
                 test: /\.html$/,
-                loader: 'html-loader',
-                options: {
-                    loaders: {
-                        ts: 'ts-loader'
-                    },
-                    esModule: true
-                }
+                loader: 'html-loader'
             },
             {
                 test: /\.(eot|svg|ttf|woff|woff2)$/,
