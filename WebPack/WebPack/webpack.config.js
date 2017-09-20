@@ -2,7 +2,7 @@
 var webpack = require('webpack')
 
 module.exports = {
-    entry: './main.js',
+    entry: './main.ts',
     output: {
     path: path.resolve(__dirname, './dist'),
     publicPath: '/dist/',
@@ -34,6 +34,11 @@ module.exports = {
                 ]
             },
             {
+                test: /\.tsx?$/,
+                exclude: /node_modules|vue\/src/,
+                loader: 'ts-loader',
+            },
+            {
                 test: /\.(png|jpg|gif|svg)$/,
                 loader: 'file-loader',
                 options: {
@@ -49,7 +54,13 @@ module.exports = {
             },
             {
                 test: /\.html$/,
-                loader: 'html-loader'
+                loader: 'html-loader',
+                options: {
+                    loaders: {
+                        ts: 'ts-loader'
+                    },
+                    esModule: true
+                }
             },
             {
                 test: /\.(eot|svg|ttf|woff|woff2)$/,

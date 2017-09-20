@@ -1,6 +1,7 @@
-﻿import 'bootstrap';
-import 'jquery';
+﻿import 'jquery';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap';
 
 import Vue from 'vue';
 import Organization from  './Web/components/Organization';
