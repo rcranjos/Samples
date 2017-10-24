@@ -1,8 +1,8 @@
-﻿import Vue from 'vue';
+﻿import * as Vue from 'vue';
 
 import template from './Item.html'
 
-interface Item extends Vue {
+interface Item extends Vue.default {
     readonly item: string;
     readonly readOnly: boolean;
     readonly checkable: boolean;

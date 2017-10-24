@@ -1,10 +1,10 @@
-﻿import Vue from 'vue';
+﻿import * as Vue from 'vue';
 
 import template from './Organization.html'
 
 import Collection from './Collection'
 
-interface Organization extends Vue {
+interface Organization extends Vue.default {
     readOnly: boolean;
     collection: string[];
     selectedItem: string;

@@ -1,8 +1,8 @@
-﻿import Vue from 'vue';
+﻿import * as Vue from 'vue';
 
 import template from './AddItem.html';
 
-interface AddItem extends Vue {
+interface AddItem extends Vue.default {
     readonly placeholder: string;
 
     newItem: string;

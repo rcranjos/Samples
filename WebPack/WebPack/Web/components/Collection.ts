@@ -1,11 +1,11 @@
-﻿import Vue from 'vue';
+﻿import * as Vue from 'vue';
 
 import template from './Collection.html'
 
 import Item from './Item';
 import AddItem from './AddItem'
 
-interface Collection extends Vue {
+interface Collection extends Vue.default {
     readonly collection: string[];
     readonly title: string;
     readonly placeholder: string;
